@@ -1,0 +1,79 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#welContent, #mainContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#welContent {
+    padding-top: 225px;
+    flex: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.text {
+    color: rgb(211, 255, 244);
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#btnEnter {
+    background: none;
+    border-radius: 999px;
+    width: 100px;
+}
+
+#aEnter {
+    padding-top: 425px;
+    padding-left: 5px;
+}
+
+#mainContent {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#id {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#operatingSpace {
+    background-color: black;
+    width: 95vw;
+    height: 95vh;
+    opacity: 35%;
+    border-radius: 25px;
+    outline: 2px;
+    outline-color: rgb(172, 223, 223);
+    outline-style: solid;
+}
