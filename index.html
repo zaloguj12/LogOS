@@ -14,7 +14,7 @@
             </h1>
 
             <h3>
-                <p class="text">WebOS based around mass surveilance</p>
+                <p class="text">HyprLand inspired WebOS</p>
             </h3>
 
             <div id="aEnter">
@@ -27,8 +27,29 @@
         <div id="mainContent">
             <div id="id">
                 <section id="operatingSpace">
-                    
+                    <div class="appUno">
+                        <a id="abt" onclick="openApp('aboutApp')">
+                            <img src="images/huh.png" class="huh">
+                            <p>About</p>
+                        </a>
+                    </div>
+
+                    <div id="workspace"></div>
                 </section>
+
+                <div id="aboutApp" class="appWindow" data-open="false">
+                    <div class="appHeader">
+                        <span>About LogOS</span>
+                        <button class="closeBtn" onclick="closeApp('aboutApp')">X</button>
+                    </div>
+                    <a id="abtAbt">
+                        <p>
+                            LogOS is a HyprLand inspired WebOS made with HTML, CSS and JavaScrpit.
+                            <br><br>
+                            Hello
+                        </p>
+                    </a>
+                </div>
             </div>
         </div>
     </body>

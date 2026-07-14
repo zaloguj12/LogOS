@@ -1,3 +1,9 @@
+* {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -16,6 +22,11 @@ body {
     padding: 0;
     margin: 0;
 }
+
+p {
+    color: white;
+}
+
 
 #welContent, #mainContent {
     position: absolute;
@@ -37,9 +48,6 @@ body {
 
 .text {
     color: rgb(211, 255, 244);
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 #btnEnter {
@@ -68,12 +76,76 @@ body {
 }
 
 #operatingSpace {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     width: 95vw;
     height: 95vh;
-    opacity: 35%;
     border-radius: 25px;
     outline: 2px;
-    outline-color: rgb(172, 223, 223);
+    outline-color: rgb(68, 18, 87);
     outline-style: solid;
+}
+
+.appUno {
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.huh {
+    height: 50px;
+    width: 50px;
+}
+
+#abt {
+    text-decoration: none;
+    color: inherit;
+}
+
+#workspace {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+    pointer-events: none;
+}
+
+.appWindow {
+    display: none;
+    position: relative;
+    height: 100%;
+    background-color: rgba(18,15,27,.55);
+    backdrop-filter: blur(18px);
+    border-radius: 20px;
+    border: 2px solid rgba(179,136,232,.45);
+    overflow: hidden;
+    pointer-events: auto;
+}
+
+.appWindow.active {
+    border-color: white;
+}
+
+.appHeader {
+    height: 45px;
+    background: rgba(255, 255, 255, .05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.appHeader:active {
+    cursor: grabbing;
+}
+
+.closeBtn {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
 }
